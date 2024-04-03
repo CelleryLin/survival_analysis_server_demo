@@ -1,0 +1,7 @@
+Flask
+lifelines
+numpy
+pandas
+scikit_learn
+xgboost
+flask_cors

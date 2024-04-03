@@ -1,0 +1,66 @@
+p {
+  margin: 4px;
+}
+
+.App-header {
+  background-color: #525f60;
+  min-height: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+
+.App {
+  position: fixed;
+  top: 15px;
+  height: 89vh;
+}
+
+.App-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  width: 100%;
+  height: 100%;
+}
+
+.forms {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  width: 20%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.results {
+  display: flex;
+  margin: 10px;
+  padding: 10px 50px 10px 10px;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.output_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
