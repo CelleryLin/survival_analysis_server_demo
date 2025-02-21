@@ -6,7 +6,7 @@ import ShowKm from './Components/ShowKm';
 import result_info from './config/result_info';
 import create_plot_data from './Components/create_plot_data';
 
-function App() {
+function App(props) {
   const [result, setResult] = useState(
     result_info.reduce((acc, res) => {
       acc[res.Treatment] = 0;
@@ -30,7 +30,7 @@ function App() {
       </header>
       <div className='App-container'>
         <div className='forms'>
-          <Form setResult={setResult} />
+          <Form setResult={setResult} appVersion={props.appVersion}/>
         </div>
         <div className='results'>
           <Showres result={result} />

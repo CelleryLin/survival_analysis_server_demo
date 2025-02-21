@@ -6,7 +6,7 @@ import time
 from Online_XGBoost_V2 import SURVIVAL_PREDICTOR
 from flask_cors import CORS
 
-app = Flask(__name__, template_folder='../templates', static_folder='../static')
+app = Flask(__name__, template_folder='../build', static_folder='../build/static')
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 survival_predictor = SURVIVAL_PREDICTOR()
 

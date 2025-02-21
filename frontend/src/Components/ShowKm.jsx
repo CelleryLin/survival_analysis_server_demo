@@ -64,7 +64,6 @@ export default function ShowKm(props) {
           };
         }
         if (this_ele_ci_index !== -1) {
-          console.log("hihi")
           prevkmc[this_ele_ci_index] = {
             ...prevkmc[this_ele_ci_index],
             plotdata: {

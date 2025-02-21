@@ -65,6 +65,14 @@ Docker 是一個應用程式的容器(Container)，只要妥善編寫 Dockerfile
 
 
 #### Build
+`npm run build`之後，記得把 ./frontend/build 中的 static 和 index.html flask 的專案下，並在後端指定入口
+
+```python
+app = Flask(__name__, template_folder='../templates', static_folder='../static')
+```
+
+`template_folder` 裡面放 html.index
+`static_folder` 為 static 資料夾
 
 ### 後端
 

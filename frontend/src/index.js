@@ -5,9 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+console.log(`${process.env.REACT_APP_NAME} ${process.env.REACT_APP_VERSION}`);
 root.render(
   <React.StrictMode>
-    <App />
+    <App appVersion={process.env.REACT_APP_VERSION}/>
   </React.StrictMode>
 );
 

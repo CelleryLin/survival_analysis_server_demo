@@ -17,7 +17,7 @@ export default function InputComponent(props) {
     if (field.type === 'select'){
         return (
             <TextField
-                required
+                required={field.required !== 0}
                 select
                 key={field.name}
                 name={field.name}
@@ -41,7 +41,7 @@ export default function InputComponent(props) {
     if (field.type === 'number'){
         return (
             <TextField
-                required
+                required={field.required !== 0}
                 key={field.name}
                 name={field.name}
                 id={field.name}
@@ -56,5 +56,23 @@ export default function InputComponent(props) {
             />
         );
     }
+    if (field.type === 'name'){
+        return (
+            <TextField
+                required={field.required !== 0}
+                key={field.name}
+                name={field.name}
+                id="Patient_name"
+                label={field.showname}
+                value={props.formData[field.name]}
+                error={props.formDataErr[field.name]}
+                onChange={props.handleChange}
+                sx={{ m: 1,  }}
+                variant="outlined"
+                margin="normal"
+            />
+        );
+    }
+
     return null; // return null for unsupported field types
 }

@@ -9,7 +9,7 @@ const create_plot_data = (predictions, kmcdata) => {
     let data = [];
     
     Object.keys(predictions).forEach((key) => {
-        console.log("kk", key)
+        // console.log("kk", key)
         let element = {
             x: [],
             y: [],
